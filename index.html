@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Web Page</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+
+    <script>
+        $(document).ready(function() {
+            // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function() {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
+
+
+    <!--font-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="fontawesome-web/css/all.css">
+</head>
+
+<body>
+    <!--Creat Navbar-->
+    <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark" role="navigation">
+        <div class="container">
+            <a href="#" class="navbar-brand">Website Template</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navid">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+            <div class="collapse navbar-collapse" id="navid">
+                <ul class="navbar-nav text-center ml-auto 	">
+                    <li class="nav-item">
+                        <a href="#header" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#services" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about-us" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#team" class="nav-link">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact-us" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+    </nav>
+    <!--Header Home-->
+    <header id="header" class="jumbotron back-img">
+        <div class="container text-center">
+            <h1 class="wow bounceInDown"><strong>Welcome</strong> To Developer<sub>&reg;</sub> </h1>
+            <h4 class="wow bounceInRight" data-wow-delay="0.5s">Create, Share & Collaborate On Projects All In One Place.</h4>
+            <div class="btn-anim wow bounceInLeft" data-wow-delay="0.7s">
+                <a href="#" class="btn btn-outline-danger mr-4">Login</a>
+                <a href="#" class="btn btn-outline-danger">Sign Up</a>
+            </div>
+        </div>
+    </header>
+    <!---****************-->
+    <!--Services-->
+    <section id="services" class="text-center">
+        <div class="container">
+            <h1 class="wow jackInTheBox" data-wow-delay="0.2s">Our Services</h1>
+            <hr>
+            <div class="row fa-icn">
+                <div class="col-md-3 col-sm-3 wow bounceInRight" data-wow-delay="0.5s">
+                    <i class="fas fa-desktop "></i>
+                    <h4>Desktop Development</h4>
+                    <p>Web application development and marketing</p>
+                </div>
+                <div class="col-md-3 col-sm-3 wow bounceInRight" data-wow-delay="1s">
+                    <i class="fas fa-mobile "></i>
+                    <h4>Mobile Development</h4>
+                    <p>Mobile application development and marketing</p>
+                </div>
+                <div class="col-md-3 col-sm-3 wow bounceInRight" data-wow-delay="1.5s">
+                    <i class="fas fa-at "></i>
+                    <h4>Web Development</h4>
+                    <p>Web application development and marketing</p>
+                </div>
+                <div class="col-md-3 col-sm-3 wow bounceInRight" data-wow-delay="1.85s">
+                    <i class="fas fa-cogs "></i>
+                    <h4>Consulting</h4>
+                    <p>Desktop application development and marketing</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--***-->
+    <!--About Us-->
+    <section id="about-us">
+        <div class="container">
+            <h1 class="wow slideInDown" data-wow-delay="0.1s">About Us</h1>
+            <hr>
+            <div class="row abt-us">
+                <div class="col-md-6">
+                    <h3 class="wow bounceInLeft" data-wow-delay="0.2s">Why Are We Different?</h3>
+                    <p class="wow bounceInRight" data-wow-delay="0.2s">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen
+                        book.It has survived not only five centuries,but also the leap into electronic typesetting,remaining essentially unchanged.It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,and
+                        more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <p class="wow bounceInRight" data-wow-delay="0.2s">Lorem Ipsum is simply dummy text of the printing.</p>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-5 wow zoomIn" data-wow-delay="0.7s">
+                    <img src="images/about-us.png">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--***-->
+    <!--Team-->
+    <div id="team">
+        <div class="container">
+            <div class="team-heading">
+                <h1>Our Team</h1>
+                <p>Our Moto: "You May Think Of It, We Can Do It!"</p>
+                <hr>
+            </div>
+            <div class="row team-box">
+                <div class="col-lg-3 col-md-3 box">
+                    <img src="images/1.png" alt="teamphoto">
+                    <h4>Alisa Jim</h4>
+                    <h5>Web Developer</h5>
+                    <p>Web Application Development and Marketing</p>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+                <div class="col-lg-3 col-md-3 box2">
+                    <img src="images/2.png" alt="teamphoto">
+                    <h4>Ali Jin</h4>
+                    <h5>Mobile Developer</h5>
+                    <p>Mobile Application Development and Marketing</p>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+                <div class="col-lg-3 col-md-3 box">
+                    <img src="images/3.png" alt="teamphoto">
+                    <h4>Mendoza Mick</h4>
+                    <h5>Web Designer</h5>
+                    <p>Web Application Designing and Marketing</p>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+                <div class="col-lg-3 col-md-3 box2">
+                    <img src="images/4.png" alt="teamphoto">
+                    <h4>Mick John</h4>
+                    <h5>CEO</h5>
+                    <p>Founder Of Company and Manage the Company</p>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--***-->
+    <!--Contact-us-->
+    <div id="contact-us" class="cnt-img">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>Drop us a liniar or Just say "Hello" !</p>
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <form>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="firstname"><i class="fas fa-user"></i></span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="First Name">
+                        </div>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="lastname"><i class="fas fa-user"></i></span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Last Name">
+                        </div>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="email"><i class="fas fa-envelope"></i></span>
+                            </div>
+                            <input type="email" class="form-control" placeholder="Email Address">
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <form>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="subject"><i class="fa fa-comment"></i></span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Subject">
+                        </div>
+                        <textarea cols="80" rows="5" class="form-control" placeholder="Write Your Message Here!"></textarea>
+                    </form>
+                </div>
+                <button type="submit" class="btn btn-lg btn-size">Send Your Message</button>
+            </div>
+
+        </div>
+    </div>
+    <!--***-->
+    <!--Footer-->
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4">
+                    <h5>Contact Us</h5>
+                    <hr>
+                    <p><i class="fa fa-home"> </i> E-2,Scheme 33,Asma Garden,175000</p>
+                    <p><i class="fa fa-envelope"> </i> as.abdsamad@gmail.com</p>
+                    <p><i class="fa fa-phone"> </i> 021 090078 601</p>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h5>About</h5>
+                    <hr>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text </p>
+                </div>
+                <div class="col-lg-4 col-md-4 social-icon">
+                    <h5>Stay In Touch</h5>
+                    <hr>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Subscribe Now">
+                        <div class="input-group-prepend">
+                            <a href="#" class="input-group-text" id="subscribe">Subscribe!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right">
+            <p>&copy; 2019 Copyright: Abdul Samad</p>
+        </div>
+    </div>
+    <!--***-->
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>
